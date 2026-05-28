@@ -41,4 +41,14 @@ export class Productos implements OnInit {
 
   }
 
+  filtrarProductos(){
+
+  return this.productos.filter(producto =>
+
+    producto.nombre.toLowerCase().includes(this.filtro.toLowerCase())
+
+  );
+
+}
+
 }
