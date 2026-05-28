@@ -28,13 +28,11 @@ export const routes: Routes = [
   {
     path: 'productos',
     component: Productos,
-    canActivate: [authGuard]
   },
 
   {
     path: 'ofertas',
     component: Ofertas,
-    canActivate: [authGuard]
   },
 
   {
@@ -46,7 +44,6 @@ export const routes: Routes = [
   {
     path: 'contacto',
     component: Contacto,
-    canActivate: [authGuard]
   },
 
   {
