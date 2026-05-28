@@ -1,0 +1,12 @@
+.navbar{
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+}
+
+.nav-link{
+    color:white !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:yellow !important;
+}

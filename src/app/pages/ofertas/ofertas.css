@@ -1,0 +1,25 @@
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.oferta-card {
+  transition: 0.3s;
+}
+
+.oferta-card:hover {
+  transform: scale(1.05);
+}
+
+button {
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+}

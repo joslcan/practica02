@@ -1,0 +1,38 @@
+.hero-tienda{
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 140px 0;
+}
+
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card img{
+    height: 220px;
+    object-fit: cover;
+}
+
+.categoria-card,
+.producto-card{
+    transition: 0.3s;
+}
+
+.categoria-card:hover,
+.producto-card:hover{
+    transform: scale(1.05);
+}
+
+button{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+}

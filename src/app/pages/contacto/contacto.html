@@ -1,0 +1,71 @@
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="text-danger">Contáctanos</h1>
+
+    <p class="lead">¿Tienes hambre? Escríbenos y encuentra tu próximo antojo.</p>
+  </div>
+
+  <div class="row">
+    <!-- FORMULARIO -->
+
+    <div class="col-md-7 mb-4">
+      <div class="card shadow p-4">
+        <form (ngSubmit)="enviarMensaje()">
+          <div class="mb-3">
+            <label class="form-label"> Nombre </label>
+
+            <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Correo </label>
+
+            <input type="email" class="form-control" [(ngModel)]="correo" name="correo" required />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label"> Mensaje </label>
+
+            <textarea rows="5" class="form-control" [(ngModel)]="mensaje" name="mensaje" required>
+            </textarea>
+          </div>
+
+          <button class="btn btn-danger w-100">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- INFORMACIÓN -->
+
+    <div class="col-md-5">
+      <div class="card shadow p-4 h-100">
+        <h3 class="text-danger mb-4">Información</h3>
+
+        <p> contacto@antojapp.com</p>
+
+        <p> +51 976 740 520</p>
+
+        <p> Lima, Perú</p>
+
+        <hr />
+
+        <h5>Ejemplo de Pipes</h5>
+
+        <p>
+          Alias:
+          {{ alias | uppercase }}
+        </p>
+
+        <p>
+          Fecha:
+          {{ fecha | date: 'fullDate' }}
+        </p>
+
+        <p>
+          Promoción:
+          {{ precioPromo | currency: 'PEN' : 'symbol' : '1.2-2' : 'es-PE' }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

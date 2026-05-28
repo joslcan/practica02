@@ -1,0 +1,60 @@
+<!-- HERO -->
+
+<section class="hero-tienda text-white text-center">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Tienda AntojApp</h1>
+
+    <p class="lead">Descubre sabores increíbles cerca de ti.</p>
+  </div>
+</section>
+
+<!-- CATEGORÍAS -->
+
+<div class="container py-5">
+  <h2 class="text-center text-danger mb-5">Categorías</h2>
+
+  <div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let categoria of categorias">
+      <div class="card shadow categoria-card">
+        <img [src]="categoria.imagen" class="card-img-top" alt="categoria" />
+
+        <div class="card-body text-center">
+          <h5>
+            {{ categoria.nombre }}
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTOS -->
+
+<div class="container pb-5">
+  <h2 class="text-center text-danger mb-5">Productos Destacados</h2>
+
+  <div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let producto of productos">
+      <div class="card shadow producto-card h-100">
+        <img [src]="producto.imagen" class="card-img-top" alt="producto" />
+
+        <div class="card-body text-center">
+          <h5>
+            {{ producto.nombre }}
+          </h5>
+
+          <p>
+            Stock:
+            {{ producto.stock }}
+          </p>
+
+          <h4 class="text-danger">
+            {{ producto.precio | currency: 'PEN' : 'symbol' : '1.2-2' : 'es-PE' }}
+          </h4>
+
+          <button class="btn btn-danger w-100">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

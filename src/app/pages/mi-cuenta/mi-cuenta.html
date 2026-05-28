@@ -1,0 +1,67 @@
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="text-danger">Mi Cuenta</h1>
+
+    <p class="lead">Información personal y pedidos realizados.</p>
+  </div>
+
+  <div class="row">
+    <!-- DATOS DEL USUARIO -->
+
+    <div class="col-md-4 mb-4">
+      <div class="card shadow p-4 text-center h-100">
+<img
+  src="/img/nilver.jpg"
+  class="img-fluid rounded-circle mb-3 perfil"
+/>
+
+        <h3>
+          {{ usuario.nombre | uppercase }}
+        </h3>
+
+        <p>
+          {{ usuario.correo }}
+        </p>
+
+        <span class="badge bg-danger p-2">
+          {{ usuario.plan }}
+        </span>
+
+        <hr />
+
+        <p>
+          Registrado:
+          {{ usuario.fechaRegistro | date: 'fullDate' }}
+        </p>
+      </div>
+    </div>
+
+    <!-- HISTORIAL -->
+
+    <div class="col-md-8">
+      <div class="card shadow p-4">
+        <h3 class="text-danger mb-4">Historial de Pedidos</h3>
+
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Producto</th>
+
+              <th>Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let pedido of pedidos">
+              <td>
+                {{ pedido.producto }}
+              </td>
+
+              <td>S/ {{ pedido.precio }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
