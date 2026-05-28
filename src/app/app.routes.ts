@@ -23,8 +23,6 @@ export const routes: Routes = [
     component: Login
   },
 
-  // RUTAS PROTEGIDAS
-
   {
     path: 'productos',
     component: Productos,
@@ -44,6 +42,8 @@ export const routes: Routes = [
     path: 'contacto',
     component: Contacto,
   },
+
+// RUTAS PROTEGIDAS
 
   {
     path: 'mi-cuenta',
