@@ -38,7 +38,6 @@ export const routes: Routes = [
   {
     path: 'tienda',
     component: Tienda,
-    canActivate: [authGuard]
   },
 
   {
