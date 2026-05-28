@@ -15,12 +15,12 @@ import { authGuard } from './guards/auth.guard';
 export const routes: Routes = [
   {
     path: '',
-    component: Home,
+    component: Home
   },
 
   {
     path: 'login',
-    component: Login,
+    component: Login
   },
 
   // RUTAS PROTEGIDAS
@@ -28,41 +28,41 @@ export const routes: Routes = [
   {
     path: 'productos',
     component: Productos,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: 'ofertas',
     component: Ofertas,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: 'tienda',
     component: Tienda,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: 'contacto',
     component: Contacto,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: 'mi-cuenta',
     component: MiCuenta,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: 'dashboard',
     component: Dashboard,
-    canActivate: [authGuard],
+    canActivate: [authGuard]
   },
 
   {
     path: '**',
-    component: NotFound,
+    component: NotFound
   },
 ];
