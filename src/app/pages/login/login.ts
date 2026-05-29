@@ -19,14 +19,14 @@ export class Login {
 
   iniciarSesion(){
 
-    // Usuario simulado
+   
     const correoAdmin = 'nilvercor@gmail.com';
     const passwordAdmin = '123456';
 
-    // Validación
+   
     if(this.correo === correoAdmin && this.password === passwordAdmin){
 
-      // Guardar sesión
+     
       if(typeof window !== 'undefined'){
 
         localStorage.setItem('usuario', this.correo);
