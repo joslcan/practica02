@@ -32,19 +32,19 @@
           <a class="nav-link" routerLink="/mi-cuenta"> Mi Cuenta </a>
         </li>
 
-        <!-- LOGIN -->
+       
 
         <li class="nav-item" *ngIf="!usuarioLogueado()">
           <a class="nav-link" routerLink="/login"> Login </a>
         </li>
 
-        <!-- DASHBOARD -->
+     
 
         <li class="nav-item" *ngIf="usuarioLogueado()">
           <a class="nav-link" routerLink="/dashboard"> Dashboard </a>
         </li>
 
-        <!-- CERRAR SESIÓN -->
+      
 
         <li class="nav-item" *ngIf="usuarioLogueado()">
           <button class="btn btn-danger ms-2" (click)="cerrarSesion()">Cerrar Sesión</button>
