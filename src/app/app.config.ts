@@ -12,7 +12,8 @@ import { registerLocaleData } from '@angular/common';
      provideRouter(routes),
      provideClientHydration(withEventReplay()),
          // Español
-    { provide: LOCALE_ID, useValue: 'es-PE' },
+    { provide: LOCALE_ID, useValue: 'es' }
 
      ]
     };
+
