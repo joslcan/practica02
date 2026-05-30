@@ -34,6 +34,15 @@
       "precio": 30,
       "stock": 5,
       "imagen": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58"
+    },
+
+    {
+      "id":5,
+      "nombre": "Pollo a la brasa",
+      "categoria": "Criollo",
+      "precio":60,
+      "stock": 20,
+      "imagen": "https://elcomercio.pe/resizer/v2/55QLUH7SV5E53AFZHMYNTJ4TTE.jpg?auth=bdffd2a0f4da7a109fb83ad9b94fcf63e5ca1c345be580dc898152c14dac10a0&width=1200&height=675&quality=75&smart=true"
     }
   ]
 }
